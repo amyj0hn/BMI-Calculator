@@ -1,0 +1,104 @@
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left,#E5D3B3, #B99976);
+}
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 5px;
+}
+.container {
+    width: 60vh;
+    height: 70vh;
+    border: 2px solid #664226;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+button {
+    display: block;
+    margin: auto;
+    border: 1px solid  #664226;
+    border-radius: 10px;
+    height: 50px;
+    width: 70px;
+    background: transparent;
+    padding: 5px;
+    /* color: whitesmoke; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+  /* box-shadow: 0 0 0 0 transparent; */
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+button:hover {
+    color: black;
+    background:teal;
+  box-shadow: 0 0 45px 7px teal;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.height-container {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+.weight-container {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+input {
+    height: 30px;
+    width: 85%;
+    background: transparent;
+    /* border-top: 2px solid beige;
+    border-left: 2px solid navy; */
+    /* border-right: none;
+    border-bottom: none; */
+    font-size: 16px;
+    font-family: monospace;
+}
+p {
+    font-size: 18px;
+    padding: 15px;
+}
+::placeholder {
+    color: #664226;
+}
+@media screen and (max-width: 430px) {
+    .container {
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 370px) {
+    .container {
+        width: 80%;
+        margin: auto;
+        height: 80vh;
+    }
+}
